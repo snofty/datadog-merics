@@ -1,0 +1,10 @@
+version: '1.0'
+services:
+  datadog-1:
+    image: datadog-metrics:1.0
+    ports:
+      - 8087:8088
+  datadog-2:
+    image: datadog-metrics:1.0
+    ports:
+      - 8089:8088

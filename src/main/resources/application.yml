@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+management:
+  metrics:
+    export:
+      datadog:
+        apiKey:
+        enabled: true
+        uri: https://app.datadoghq.com/
+        step: PT60S
+        batchSize: 10000
+        connectTimeout: PT120S
+
+logging:
+  level:
+    io:
+      micrometer:
+        datadog: DEBUG
